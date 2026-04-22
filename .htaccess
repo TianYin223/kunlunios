@@ -1,0 +1,31 @@
+# 安全配置
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # 阻止访问敏感文件
+    RewriteRule ^logs/ - [F,L]
+    RewriteRule ^backups/ - [F,L]
+    RewriteRule ^config/ - [F,L]
+    RewriteRule \.sql$ - [F,L]
+</IfModule>
+
+# 禁止目录浏览
+Options -Indexes
+
+# 保护配置文件
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sql)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order Allow,Deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# PHP 安全设置
+<IfModule mod_php.c>
+    php_flag display_errors Off
+    php_flag log_errors On
+    php_value error_log logs/php_errors.log
+</IfModule>

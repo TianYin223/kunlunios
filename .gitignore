@@ -1,0 +1,39 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs / temp
+*.log
+logs/
+tmp/
+temp/
+
+# Environment / secrets
+.env
+.env.*
+config/config.php
+
+# PHP uploads/runtime
+uploads/
+
+# Android
+android-app/.gradle/
+android-app/.idea/
+android-app/local.properties
+android-app/**/build/
+
+# iOS / Xcode
+ios-app/**/DerivedData/
+ios-app/**/*.xcworkspace/
+ios-app/**/*.xcodeproj/
+ios-app/**/*.xcuserdata/
+ios-app/build/
+
+# Node (if any)
+node_modules/
+
+# Archives
+*.zip

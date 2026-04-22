@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_primary">#111827</color>
+    <color name="blue_primary_dark">#0B1220</color>
+    <color name="teal_secondary">#B68A44</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#111827</color>
+    <color name="gray_200">#F5F7FA</color>
+    <color name="gray_600">#6B7280</color>
+    <color name="line_subtle">#E5E7EB</color>
+    <color name="chip_bg">#F3F4F6</color>
+    <color name="bottom_nav_indicator">#EEF2F7</color>
+    <color name="success_green">#1F7A3D</color>
+    <color name="error_red">#B42318</color>
+</resources>

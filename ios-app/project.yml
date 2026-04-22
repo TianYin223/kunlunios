@@ -1,0 +1,24 @@
+name: KunlunStudentApp
+options:
+  bundleIdPrefix: com.kunlun
+settings:
+  base:
+    SWIFT_VERSION: 5.9
+targets:
+  KunlunStudentApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "16.0"
+    sources:
+      - path: KunlunStudentApp
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.kunlun.studentapp.ios
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        INFOPLIST_FILE: KunlunStudentApp/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1,2"
+    scheme:
+      gatherCoverageData: false
+
